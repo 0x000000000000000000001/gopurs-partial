@@ -1,7 +1,3 @@
-package Partial_Unsafe
-
-import "gopurs/output/gopurs_runtime"
-
-var X_unsafePartial = gopurs_runtime.Func(func(f gopurs_runtime.Value) gopurs_runtime.Value {
-	return gopurs_runtime.Apply(f, gopurs_runtime.Value{})
-})
+func _UnsafePartial(f func(any) any) any {
+	return f(nil)
+}
