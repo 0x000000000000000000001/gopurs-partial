@@ -1,3 +1,3 @@
-func _UnsafePartial(f func(any) any) any {
+func _UnsafePartial(f func(interface{}) interface{}) interface{} {
 	return f(nil)
 }

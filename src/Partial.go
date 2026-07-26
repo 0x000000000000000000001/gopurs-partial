@@ -1,3 +1,3 @@
-func _CrashWith(msg string) any {
+func _CrashWith(msg string) interface{} {
 	panic(msg)
 }
